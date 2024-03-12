@@ -1,4 +1,5 @@
 require('dotenv').config()
+console.log(process.env)
 const express = require("express");
 const logger = require("./utils/logger");
 const app = express();
@@ -15,5 +16,6 @@ require("./startup/prod")(app);
 
 // Promise.reject(new Error("unhandled rejection"));
 
-const port = process.env.PORT || config.get("port");
+// const port = process.env.PORT || config.get("port");
+const port = process.env.PORT ;
 app.listen(port, () => logger.info(`Listening on port ${port}...`));
