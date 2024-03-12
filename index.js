@@ -1,5 +1,5 @@
-require('dotenv').config()
-console.log(process.env)
+require("dotenv").config();
+console.log(process.env);
 const express = require("express");
 const logger = require("./utils/logger");
 const app = express();
@@ -18,6 +18,7 @@ require("./startup/prod")(app);
 
 // const port = process.env.PORT || config.get("port");
 
+//seeing that 1. mongoDb completes reuquest but vercel no response sent   2. sending request again creates duplicate entry in mongodb
 
 //section 12, 13 14 left
 const port = process.env.PORT || 3000;
