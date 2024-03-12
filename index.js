@@ -17,5 +17,8 @@ require("./startup/prod")(app);
 // Promise.reject(new Error("unhandled rejection"));
 
 // const port = process.env.PORT || config.get("port");
-const port = process.env.PORT ;
+
+
+//section 12, 13 14 left
+const port = process.env.PORT || 3000;
 app.listen(port, () => logger.info(`Listening on port ${port}...`));
